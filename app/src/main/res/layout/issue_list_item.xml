@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:apps="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_user_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_user_image"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        apps:text="Test Name"
+        />
+
+    <TextView
+        android:id="@+id/tv_issue_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_user_image"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_margin="5dp"
+        apps:text="Test Issue Number"
+        />
+
+    <TextView
+        android:id="@+id/tv_issue_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_issue_number"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_margin="5dp"
+        apps:text="Test Issue Body"
+        />
+
+    <TextView
+        android:id="@+id/tv_comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        apps:text="Test Count"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+</RelativeLayout>
